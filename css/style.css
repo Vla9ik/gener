@@ -533,6 +533,10 @@ h6 {
   margin-bottom: 2.5rem;
 }
 
+.installation-plant__title {
+  max-width: 30.125rem;
+}
+
 .installation-plant__label {
   max-width: 40.125rem;
   color: #000;
