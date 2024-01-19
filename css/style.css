@@ -261,6 +261,13 @@ h6 {
   /* 125% */
 }
 
+.text p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .description-block {
   margin-right: 0.9375rem;
   margin-left: 0.9375rem;
@@ -442,10 +449,6 @@ h6 {
 
 .advantages-plant__text {
   position: relative;
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .advantages-plant__text::before {
@@ -479,13 +482,6 @@ h6 {
   display: grid;
 }
 
-.worth-plant__text p {
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: normal;
-}
-
 .worth-plant__text p span {
   font-weight: 700;
 }
@@ -516,9 +512,6 @@ h6 {
 }
 
 .plant-benefits__text {
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
   line-height: 1.25;
   /* 125% */
 }
