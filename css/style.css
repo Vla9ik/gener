@@ -584,6 +584,10 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
+.working-principle__text p {
+  line-height: 1.25;
+}
+
 .working-principle__subtitle {
   color: #0d233c;
   font-size: 20px;
@@ -610,6 +614,11 @@ h6 {
   display: -ms-grid;
   display: grid;
   row-gap: 1.5rem;
+  font-size: 1rem;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.25;
+  /* 125% */
 }
 
 .features-plant__title {
@@ -657,6 +666,10 @@ h6 {
 
 .deposit-plant__content {
   width: 100%;
+}
+
+.deposit-plant__text p:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 .deposit-plant__img {
@@ -804,6 +817,7 @@ h6 {
   text-align: center;
   width: 100%;
   min-width: 885px;
+  border-spacing: 0 2px;
 }
 
 .option {
@@ -823,6 +837,7 @@ h6 {
 }
 
 .power {
+  padding-bottom: 0.9375rem;
   color: #a8afb7;
   font-size: 14px;
   font-weight: 600;
@@ -850,6 +865,11 @@ h6 {
   border-radius: 0.625rem 0 0 0;
 }
 
+.orange,
+.black {
+  max-width: 24.0625rem;
+}
+
 .product {
   font-size: 14px;
   font-weight: 400;
@@ -864,6 +884,7 @@ h6 {
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
+  max-width: 18.75rem;
 }
 
 .model:not(:last-child) {
@@ -893,6 +914,18 @@ h6 {
   line-height: normal;
 }
 
+.number.border {
+  border-radius: 0 10px 10px 0;
+}
+
+.number_mod {
+  border-radius: 0 10px 0 0;
+}
+
+.number_orng {
+  border-radius: 0 0 10px 0;
+}
+
 .orange {
   text-align: left;
   color: #000;
@@ -905,6 +938,10 @@ h6 {
 
 tr:last-child .orange {
   border-radius: 0 0 0 0.625rem;
+}
+
+tr th:last-child {
+  text-align: left;
 }
 
 .payback-plant__container {
@@ -938,6 +975,10 @@ tr:last-child .orange {
 
 .payback-plant__text p:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+
+td {
+  background-color: #f5f5f5;
 }
 
 @media (min-width: 39.6875em) {
@@ -1134,6 +1175,11 @@ tr:last-child .orange {
     top: 65%;
   }
 
+  tr td,
+  tr th {
+    padding: 1.25rem;
+  }
+
   .payback-plant__container {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
@@ -1320,6 +1366,10 @@ tr:last-child .orange {
   tr td:nth-child(2) {
     padding-left: 8.875rem;
   }
+
+  tr td:last-child {
+    padding-right: 6.875rem;
+  }
 }
 
 @media (max-width: 62em) {
@@ -1333,6 +1383,10 @@ tr:last-child .orange {
 
   tr td:nth-child(2) {
     padding-left: 0.625rem;
+  }
+
+  tr td:last-child {
+    padding-right: 0.625rem;
   }
 }
 
@@ -1557,6 +1611,11 @@ tr:last-child .orange {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  tr td,
+  tr th {
+    padding: 0.625rem;
   }
 
   .payback-plant__image {
@@ -2172,6 +2231,18 @@ tr:last-child .orange {
 @supports not (padding-left: clamp( 0.625rem , -17.6428571429rem  +  29.4642857143vw , 8.875rem )) {
     tr td:nth-child(2) {
       padding-left: calc(0.625rem + 8.25 * (100vw - 62rem) / 28);
+    }
+}
+
+@supports (padding-right: clamp( 0.625rem , -13.2142857143rem  +  22.3214285714vw , 6.875rem )) {
+    tr td:last-child {
+      padding-right: clamp( 0.625rem , -13.2142857143rem  +  22.3214285714vw , 6.875rem );
+    }
+}
+
+@supports not (padding-right: clamp( 0.625rem , -13.2142857143rem  +  22.3214285714vw , 6.875rem )) {
+    tr td:last-child {
+      padding-right: calc(0.625rem + 6.25 * (100vw - 62rem) / 28);
     }
 }
 }
