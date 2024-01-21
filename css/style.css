@@ -1023,6 +1023,7 @@ td {
 }
 
 .services-plant__items {
+  row-gap: 0.15625rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1084,6 +1085,10 @@ td {
 
 .services-plant__row:nth-child(1) .services-plant__item:nth-child(1) .services-plant__circle {
   right: -25px;
+}
+
+.services-plant__row:nth-child(2) {
+  row-gap: 0.15625rem;
 }
 
 .services-plant__row:nth-child(2) .services-plant__item:nth-child(1) .services-plant__image .services-plant__circle {
