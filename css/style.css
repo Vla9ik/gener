@@ -1754,10 +1754,6 @@ td {
   .services-plant__action {
     margin-bottom: 2.6875rem;
   }
-
-  .services-plant__subtitle {
-    font-size: 1.375rem;
-  }
 }
 
 @media (min-width: 80em) {
@@ -1809,12 +1805,6 @@ td {
 
   .services-plant {
     padding-top: 1.875rem;
-  }
-}
-
-@media (max-width: 48em) {
-  .services-plant__subtitle {
-    font-size: 1.125rem;
   }
 }
 
@@ -2921,20 +2911,6 @@ td {
 @supports not (padding-left: clamp( 0.0000000625rem , -8.1249996667rem  +  11.1111107407vw , 1.875rem )) {
     .services-plant__row:nth-child(2) .services-plant__item:nth-child(1) .services-plant__text {
       padding-left: calc(0.0000000625rem + 1.8749999375 * (100vw - 73.125rem) / 16.875);
-    }
-}
-}
-
-@media (min-width: 48em) and (max-width: 62em) {
-@supports (font-size: clamp( 1.125rem , 0.2678571429rem  +  1.7857142857vw , 1.375rem )) {
-    .services-plant__subtitle {
-      font-size: clamp( 1.125rem , 0.2678571429rem  +  1.7857142857vw , 1.375rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.125rem , 0.2678571429rem  +  1.7857142857vw , 1.375rem )) {
-    .services-plant__subtitle {
-      font-size: calc(1.125rem + 0.25 * (100vw - 48rem) / 14);
     }
 }
 }
